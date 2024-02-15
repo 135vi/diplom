@@ -1,30 +1,48 @@
 import Count from './Count';
-import { useState } from 'react';
 import { Button } from '@mui/material';
 import { Stack } from '@mui/material';
+import { CircularProgress } from '@mui/material';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchData } from '../actions';
+import { useEffect } from 'react';
 
-function Counter() {
-  let [count, setCount] = useState(0);
 
-  const increment = () => {
-    setCount(count + 1);
-  }
+export default function Counter() {
+  const count = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+  const incrementer = 2;
+  const users = useSelector(state => state.users);
 
-  const decrement = () => {
-    setCount(count - 1);
-  } 
+  useEffect(() => {
+    dispatch(fetchData());
+}, [dispatch]);
 
   return (
-    <>
-        <p>
-          <Count count={count} />
-        </p>
-        <Stack spacing={2} direction="row">
-          <Button variant="contained" onClick={increment}>Прибавить</Button>
-          <Button variant="contained" onClick={decrement}>Отнять</Button>
-        </Stack>
-    </>
+        <div>
+            <p>
+                <Count count={count} />
+            </p>
+            <Stack spacing={2} direction="row">
+                <Button
+								variant="contained" color='success'
+								onClick={() => dispatch({type: "INCREMENT", payload: incrementer })}>
+									Прибавить {incrementer}
+								</Button>
+                <Button 
+								variant="text" color="error"
+								onClick={() => dispatch({type: "DECREMENT", payload: incrementer})}>
+									Отнять {incrementer}
+								</Button>
+                <Button variant="outlined" color='inherit' onClick={() => dispatch(fetchData())}>
+                    Загрузить пользователей
+                </Button>
+            </Stack>
+            <ul className="users-list" style={{textAlign: "left"}}>
+                {
+                    users.pending ? <CircularProgress /> :
+                        users.error ? users.error : 
+                            users.users.map(user => <li>{user.id}. {user.name} - {user.email} </li>)}
+            </ul>
+        </div>
   );
 }
-
-export default Counter;
