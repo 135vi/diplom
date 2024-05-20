@@ -32,7 +32,7 @@ header a {
     position: relative;
 }
 header li a {
-    color: green;
+    color: #233A32;
     text-transform: uppercase;
 }
 header li {
@@ -46,7 +46,7 @@ header li a:after {
     position: absolute;
     left: 0;
     bottom: 20px;
-    background: green;
+    background: #233A32;
     transition: all 0.5s linear;  
 }
 header li a:hover:after{

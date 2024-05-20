@@ -1,0 +1,32 @@
+footer {
+    background: gray;
+	display: flex;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
