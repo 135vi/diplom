@@ -1,11 +1,11 @@
-footer ul {
+.contact {
     margin: 0;
     padding-left: 0;
     list-style: none;
+    border: 1px solid black;
 }
 
-footer li {
-    border: 1px solid black;
+.contact li {
     margin: 5px;
     padding: 5px;
 }

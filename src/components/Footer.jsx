@@ -1,4 +1,5 @@
 import './Footer.css'
+import Contacts from './Contacts'
 
 function Footer() {
     return (<footer>
@@ -12,6 +13,7 @@ function Footer() {
                 <a>каждый день с 9:00 до 20:30</a>
             </li>
         </ul>
+        {/* <Contacts /> */}
     </footer>)
 }
 
