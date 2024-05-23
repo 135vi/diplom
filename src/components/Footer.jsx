@@ -12,18 +12,6 @@ function Footer() {
                 <a>каждый день с 9:00 до 20:30</a>
             </li>
         </ul>
-        <ul class="right">
-            <li>
-                <h4>WA</h4>
-                <p>Инфо/бронирование/вакансии</p>
-                <a href="tel:89951884004">8-995-188-40-04</a>
-            </li>
-            <li>
-                <h4>TG</h4>
-                <p>Подпишись, будь в курсе всех событий</p>
-                <a href="https://t.me/s/goody_moms">@goody_moms</a>
-            </li>
-        </ul>
     </footer>)
 }
 
