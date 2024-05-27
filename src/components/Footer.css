@@ -3,7 +3,10 @@ footer {
 	display: flex;
     margin: auto;
     padding: 15px;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
@@ -22,6 +25,11 @@ footer li {
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
     display: flex;
     flex-direction: column;
 }

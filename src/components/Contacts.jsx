@@ -13,23 +13,26 @@ export default function Contacts() {
             <div className='call'>
                 <div className='call_icons'>
                     <FaWhatsapp color='green' size={'60px'} />
-                    <IoIosCall color='pink' size={'60px'} />
+                    {/* <IoIosCall color='pink' size={'60px'} /> */}
                 </div>
                 <div className='call_desc'>
-                    <ul>
+                    <h4>поддержка whatsapp</h4>
+                    <p>инфо/бронирование/вакансии</p>
+                    {/* <ul>
                         <li>инфо</li>
                         <li>бронирование</li>
                         <li>вакансии</li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
-            <div className='line'></div>
+            {/* <div className='line'></div> */}
             <div className='subscr'>
                 <div className='subscr_icons'>
                     <FaTelegramPlane color='#5599ff' size={'60px'} />
                 </div>
                 <div className='subscr_desc'>
-                    <p>подпишись, будь в курсе всех событий</p>
+                    <h4>подпишись</h4>
+                    <p>будь в курсе всех событий</p>
                 </div>
             </div>
         </div>

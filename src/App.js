@@ -5,14 +5,14 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Contacts from './components/Contacts';
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
         <Header />
-        <Contacts />
-        <Main />
+        <AppRouter />
         <Footer />
       </div>
     </Provider>

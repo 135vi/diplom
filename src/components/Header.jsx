@@ -1,12 +1,14 @@
 import './Header.css'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (<header>
         <nav>
             <ul>
-                <a href='#' class="logo-header">
+                <Link to='/' class="logo-header">
                     <img src="image/logoGOOTY.png" />
-                </a>
+                </Link>
+                <li><Link to="/contacts">контакты</Link></li>
                 <li><a href="#">мероприятия</a></li>
                 <li><a href="#">мастер классы</a></li>
                 <li><a href="#">услуги</a></li>
@@ -15,4 +17,4 @@ function Header() {
     </header>)
 }
 
-export default Header
+export default Header 
