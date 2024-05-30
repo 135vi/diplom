@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Main from './Main';
 import Contacts from './Contacts';
+import Cards from './Cards'
 
 // import { Home } from './pages/Home';
 // import { Shop } from './pages/Shop';
@@ -16,6 +17,7 @@ function AppRouter() {
 
             <Route path='/' element={<Main />} />
             <Route path='/contacts' element={<Contacts />} />
+            <Route path='/cards' element={<Cards />} />
             
         </Routes>
     );

@@ -5,8 +5,8 @@ function Main() {
     return (<main>
         <div class="h1">
             <h1>Клуб для мам, детей и всей семьи</h1>
-            <Cards />
         </div>
+        <Cards />
     </main>)
 } 
 

@@ -18,6 +18,9 @@ export default function Contacts() {
                 <div className='call_desc'>
                     <h4>поддержка whatsapp</h4>
                     <p>инфо/бронирование/вакансии</p>
+                    <div className='button'>
+                        <a href='tel:89951884004'>8-995-188-40-04</a>
+                    </div>
                     {/* <ul>
                         <li>инфо</li>
                         <li>бронирование</li>
@@ -33,6 +36,9 @@ export default function Contacts() {
                 <div className='subscr_desc'>
                     <h4>подпишись</h4>
                     <p>будь в курсе всех событий</p>
+                    <div className='button'>
+                        <a href='https://t.me/s/goody_moms'>@goody_moms</a>
+                    </div>
                 </div>
             </div>
         </div>
