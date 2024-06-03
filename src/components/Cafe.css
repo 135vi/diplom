@@ -1,0 +1,13 @@
+.cafe ul {
+    list-style: none;
+}
+
+.cafe li {
+    margin: 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

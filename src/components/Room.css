@@ -1,0 +1,20 @@
+.room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info li {
+    margin: 12px;
+    letter-spacing: 2px;
+}
+
+.room p {
+    
+}

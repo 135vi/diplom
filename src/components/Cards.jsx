@@ -1,22 +1,21 @@
 import './Cards.css'
 import Card from './Card'
-import { Link } from 'react-router-dom'
 
 export default function Cards() {
     const cards = [
         {
             title: 'Детская комната',
-            href: 'Room.jsx',
-            imageURL: 'https://laterrassa.ru/upload/iblock/d2b/d2bbff740d3e50065572f6e38215cc0a.jpg'
+            href: '/room',
+            imageURL: 'https://www.president-mobility.ru/wp-content/uploads/2016/03/2-25.jpg'
         },
         {
             title: 'Уютное кафе',
-            href: 'Cafe.jsx',
+            href: '/cafe',
             imageURL: 'https://tillypad.ru/data/storage/O6T3HAhx/andy_falconer_dwQRixazu9I_unsplash.jpg'
         },
         {
             title: 'Проведение праздников',
-            href: 'Party.jsx',
+            href: '/party',
             imageURL: 'https://1place.su/ru/blog/wp-content/uploads/2018/05/post30.jpg',
         },
     ]
