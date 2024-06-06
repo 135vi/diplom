@@ -1,0 +1,26 @@
+.menu-item {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.count {
+    font-size: small;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.menu-placeholder {
+    border-bottom: 1px solid rgba(0,0,0, 0.5);
+    flex-grow: 1;
+    /* height: 0.8em; */
+    /* border-width: 2px; */
+}

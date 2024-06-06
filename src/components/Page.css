@@ -19,3 +19,11 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.page-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

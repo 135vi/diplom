@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 40px;
 }
 
 .info ul {
@@ -13,8 +13,4 @@
 .info li {
     margin: 12px;
     letter-spacing: 2px;
-}
-
-.room p {
-    
 }

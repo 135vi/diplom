@@ -5,6 +5,7 @@ import Page from './Page';
 import Room from './Room';
 import Cafe from './Cafe';
 import Party from './Party';
+import Menu from './Menu';
 
 // import { Home } from './pages/Home';
 // import { Shop } from './pages/Shop';
@@ -35,7 +36,7 @@ function AppRouter() {
                     title='Атмосферная кофейня'
                     subtitle='Меню'
                 >
-                    <Cafe />
+                    <Menu />
                 </Page>} />
             <Route path='/party' element={
                 <Page 
