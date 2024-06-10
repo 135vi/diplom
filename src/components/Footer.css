@@ -1,5 +1,6 @@
 footer {
-    background: rgb(230, 230, 230);
+    background: #233A32;
+    color: white;
 	display: flex;
     position: fixed;
     width: 100%;
@@ -9,9 +10,28 @@ footer {
     justify-content: space-around;
 }
 
+footer h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b4d6ca;
+}
+
+footer p {
+    letter-spacing: 2px;
+    color: #b4d6ca;
+}
 .left, .right {
     display: flex;
     flex-direction: column;
+    width: 300px;
+    border-radius: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+
+    /* width: 300px;
+    border: 2px solid #182b24;
+    padding: 5px;
+    border-radius: 50px 20px; */
 }
 
 @media screen and (max-width: 991px) {
