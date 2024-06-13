@@ -76,4 +76,3 @@ function Party() {
 } 
 
 export default Party
-
