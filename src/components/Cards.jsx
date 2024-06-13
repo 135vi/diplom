@@ -11,7 +11,7 @@ export default function Cards() {
         {
             title: 'Уютное кафе',
             href: '/cafe',
-            imageURL: 'https://tillypad.ru/data/storage/O6T3HAhx/andy_falconer_dwQRixazu9I_unsplash.jpg'
+            imageURL: 'image/cafe.png'
         },
         {
             title: 'Проведение праздников',
