@@ -1,4 +1,9 @@
-.party {}
+.party {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .party h4 {
     letter-spacing: 2px;

@@ -58,19 +58,19 @@ const itemData = [
 function Party() {
     return (
         <div className='party'>
-            <ImageList sx={{ width: 800, height: 350 }} cols={6} rowHeight={164} gap={20}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                    <img
-                        srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                        src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                        alt={item.title}
-                        loading="lazy"
-                    />
-                    </ImageListItem>
-                ))}
-            </ImageList>
-            <h4><Link to="/contacts">Подробнее</Link> у наших администраторов</h4>
+          <ImageList sx={{ width: 800, height: 350 }} cols={6} rowHeight={164} gap={20}>
+            {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+                </ImageListItem>
+              ))}
+          </ImageList>
+          <h4><Link to="/contacts">Подробнее</Link> у наших администраторов</h4>
         </div>
     )
 } 
