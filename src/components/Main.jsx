@@ -1,6 +1,7 @@
 import './Main.css'
 import Cards from './Cards'
 
+
 function Main() {
     return (<main>
         <div class="h1">
